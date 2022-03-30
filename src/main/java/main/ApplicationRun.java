@@ -10,6 +10,10 @@ public class ApplicationRun {
         //--------------------------------------------------------------------
         Order order = new Order("me","res", new ArrayList<>());
         System.out.println(order.getOrderDateTime());
+        
+        Food food1 = new Food("pizza",8,10);
+        System.out.println("With price " + food1.getPrice());
+        FoodManager.popFood();
 
         OrderManager.popOrder();
         OrderManager.pushOrder(new Order("abc", "res", new ArrayList<>()));
