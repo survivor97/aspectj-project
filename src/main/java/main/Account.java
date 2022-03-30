@@ -9,11 +9,11 @@ public abstract class Account {
     protected Role role;
 
     public Account(String firstName, String lastName, String email, String username, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.username = username;
-        this.password = password;
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
+        this.setEmail(email);
+        this.setUsername(username);
+        this.setPassword(password);
     }
 
     @Override
