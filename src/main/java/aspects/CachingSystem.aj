@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 
 public aspect CachingSystem {
-
     //Order caching for users
     private Map<String, List<Order>> orderListForUsers = new HashMap<>();
 
